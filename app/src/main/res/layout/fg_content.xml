@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:id="@+id/gl_main_my"
+    android:layout_height="fill_parent"
+    android:padding="0dp" android:scrollbars="none"
+    android:background="#fdfbfe">
+
+
+    <ScrollView
+        android:id="@+id/myscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/my_widget_1" style="@style/my_1" android:background="@color/text_yellow">
+                <ImageView android:id="@+id/imgmassage" style="@style/my_17">
+                </ImageView>
+                <TextView android:id="@+id/text16" style="@style/my_16" android:text="消息">
+                </TextView>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imghead" style="@style/my_10"/>
+<!--                <<cn.ym.aloneinterface.RoundImageViewByXfermode android:id="@+id/imghead" style="@style/my_10"-->
+<!--                    app:type="circle"  android:scaleType="centerCrop">-->
+<!--                </cn.ym.aloneinterface.RoundImageViewByXfermode>>-->
+                <TextView android:id="@+id/textname" style="@style/my_11" android:text="我是lnxnii">
+                </TextView>
+                <TextView android:id="@+id/textpraise" style="@style/my_12" android:text="获赞 0">
+                </TextView>
+                <TextView android:id="@+id/textfans" style="@style/my_13" android:text="粉丝 0">
+                </TextView>
+
+
+
+                <ImageView android:id="@+id/imgto" style="@style/my_14">
+                </ImageView>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout android:id="@+id/my_widget_9" style="@style/my_9">
+                <TextView android:id="@+id/text2" style="@style/my_2" android:text="我的服务">
+                </TextView>
+            </RelativeLayout>
+            <LinearLayout android:id="@+id/my_widget_3" style="@style/my_3">
+                <RelativeLayout android:id="@+id/relconsult" style="@style/my_6">
+                    <ImageView android:id="@+id/img4" style="@style/my_4"/>
+                    <TextView android:id="@+id/text5" style="@style/my_5" android:text="文档打印">
+                    </TextView>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/relpourout" style="@style/my_20">
+                    <ImageView android:id="@+id/img18" style="@style/my_18">
+                    </ImageView>
+                    <TextView android:id="@+id/text19" style="@style/my_19" android:text="洗涤衣物">
+                    </TextView>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/relcourse" style="@style/my_23">
+                    <ImageView android:id="@+id/img21" style="@style/my_21">
+                    </ImageView>
+                    <TextView android:id="@+id/text22" style="@style/my_22" android:text="旧书交易">
+                    </TextView>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/reltest" style="@style/my_26">
+                    <ImageView android:id="@+id/img24" style="@style/my_24">
+                    </ImageView>
+                    <TextView android:id="@+id/text25" style="@style/my_25" android:text="厨房共享">
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/my_widget_32" style="@style/my_32">
+                <TextView android:id="@+id/text27" style="@style/my_27" android:text="我的互动">
+                </TextView>
+            </RelativeLayout>
+            <LinearLayout android:id="@+id/my_widget_28" style="@style/my_28">
+                <RelativeLayout android:id="@+id/relfans" style="@style/my_31">
+                    <ImageView android:id="@+id/img29" style="@style/my_29">
+                    </ImageView>
+                    <TextView android:id="@+id/text30" style="@style/my_30" android:text="关注/粉丝">
+                    </TextView>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/relcollect" style="@style/my_35">
+                    <ImageView android:id="@+id/img33" style="@style/my_33">
+                    </ImageView>
+                    <TextView android:id="@+id/text34" style="@style/my_34" android:text="我的收藏">
+                    </TextView>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/relissue" style="@style/my_38">
+                    <ImageView android:id="@+id/img36" style="@style/my_36">
+                    </ImageView>
+                    <TextView android:id="@+id/text37" style="@style/my_37" android:text="我的发布">
+                    </TextView>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/my_widget_42" style="@style/my_42">
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/my_widget_8" style="@style/my_8">
+                <RelativeLayout android:id="@+id/relper" style="@style/my_43">
+                    <ImageView android:id="@+id/img44" style="@style/my_44">
+                    </ImageView>
+                    <TextView android:id="@+id/text45" style="@style/my_45" android:text="个人主页"
+                        />
+<!--                    <ImageView android:id="@+id/img46" style="@style/my_46"/>-->
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/relspecialist" style="@style/my_47">
+                    <ImageView android:id="@+id/img48" style="@style/my_48">
+                    </ImageView>
+                    <TextView android:id="@+id/text49" style="@style/my_49" android:text="退出登录">
+                    </TextView>
+<!--                    <ImageView android:id="@+id/img50" style="@style/my_50">-->
+<!--                    </ImageView>-->
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/relset" style="@style/my_51">
+                    <ImageView android:id="@+id/img52" style="@style/my_52">
+                    </ImageView>
+                    <TextView android:id="@+id/text53" style="@style/my_53" android:text="设置">
+                    </TextView>
+<!--                    <ImageView android:id="@+id/img54" style="@style/my_54">-->
+<!--                    </ImageView>-->
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/reltitle"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#ffffff"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的"
+            android:textSize="17dp"
+            android:textColor="#565955"/>
+        <ImageView android:id="@+id/titleimgmassage" style="@style/my_17"
+            android:src="@mipmap/yimassage1">
+        </ImageView>
+        <TextView android:id="@+id/titletext16" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textSize="14dp" android:text="消息"
+            android:layout_toLeftOf="@+id/titleimgmassage"
+            android:textColor="#565955"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="8dp">
+        </TextView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

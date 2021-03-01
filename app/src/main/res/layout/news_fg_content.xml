@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+    <!--    图片滚播 -->
+    <banner.CustomBanner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/home_banner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:indicatorStyle="ORDINARY"
+        app:indicatorGravity="CENTER"
+        app:indicatorSelectRes="@drawable/shape_point_select"
+        app:indicatorUnSelectRes="@drawable/shape_point_unselect"
+        app:indicatorInterval="5dp"/>
+    <ListView
+        android:id="@+id/list_news"
+        android:background="@color/bg_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

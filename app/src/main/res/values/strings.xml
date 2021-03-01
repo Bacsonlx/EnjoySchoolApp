@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">享校</string>
+    <string name="action_settings">Settings</string>
+    <string name="tab_menu_alert">享用</string>
+    <string name="tab_menu_fun">享玩</string>
+    <string name="tab_menu_pay">享买</string>
+    <string name="tab_menu_setting">我的</string>
+    <string name="tab_head_msg">享校</string>
+</resources>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/text_yellow"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#EAE187"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="返回" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:background="@color/text_yellow"
+            android:gravity="center"
+            android:text="打印空间"
+            android:textColor="@color/text_topbar"
+            android:textSize="24sp" />
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#EAE187"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="添加" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/div_white" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edittext"
+                    android:layout_width="300dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_selector"
+                    android:hint="请输入搜索内容"
+                    android:maxLength="10"
+                    android:layout_marginStart="10dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textSize="12sp"/>
+
+                <ImageView
+                    android:id="@+id/search_btn"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/edittext"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/search" />
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_marginTop="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </FrameLayout>
+
+        <!-- ********** FrameLayout_2 **********-->
+        <FrameLayout
+            android:id="@+id/edit_framelayout2"
+            android:background="#FFEBEB"
+            android:visibility="gone"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="450dp">
+            <ImageView
+                android:id="@+id/delete_framelayout2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/delete_machine"
+                android:layout_gravity="right"
+                />
+            <ImageView
+                android:id="@+id/edit_framelayout_img2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/book_img"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="bottom|center"
+                android:orientation="horizontal">
+                <TableLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="图书编号:"/>
+                        <EditText
+                            android:id="@+id/bookIdEdit"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="书名:"/>
+                        <EditText
+                            android:id="@+id/bookNameEdit"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 价格:"/>
+                        <EditText
+                            android:id="@+id/bookPriceEdit"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"/>
+                    </TableRow>
+                    <Button
+                        android:id="@+id/addDB_btn2"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/add_btn_select"
+                        android:text="添加"/>
+                </TableLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <!--     FrameLayout_3   -->
+        <FrameLayout
+            android:id="@+id/edit_framelayout3"
+            android:visibility="gone"
+            android:layout_width="300dp"
+            android:layout_height="450dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="#FFEBEB">
+
+            <ImageView
+                android:id="@+id/delete_framelayout3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:src="@mipmap/delete_machine" />
+
+            <ImageView
+                android:id="@+id/edit_framelayout_img3"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/kitchen_img" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="65dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="厨房编号:" />
+
+                        <EditText
+                            android:id="@+id/kitchenIdEdit"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="厨房地址:" />
+
+                        <EditText
+                            android:id="@+id/kitchenAddressEdit"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 等待人数:" />
+
+                        <EditText
+                            android:id="@+id/kitchenWaitEdit"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 等待时间:" />
+
+                        <EditText
+                            android:id="@+id/kitchenTimeEdit"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <Button
+                        android:id="@+id/addDB_btn3"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/add_btn_select"
+                        android:text="添加" />
+                </TableLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- ********** FrameLayout_1 **********-->
+        <FrameLayout
+            android:id="@+id/edit_framelayout"
+            android:visibility="gone"
+            android:background="#FFEBEB"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="400dp">
+            <ImageView
+                android:id="@+id/delete_framelayout"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/delete_machine"
+                android:layout_gravity="right"
+                />
+            <ImageView
+                android:id="@+id/edit_framelayout_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/print_machine_img"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="bottom|center"
+                android:orientation="horizontal">
+                <TableLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="机器号:"/>
+                        <EditText
+                            android:id="@+id/machine_id"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="地址:"/>
+                        <EditText
+                            android:id="@+id/machine_address"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"/>
+                    </TableRow>
+                    <TableRow>
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="使用状态:"/>
+                        <RadioGroup
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/use_radio"
+                                android:text="使用中"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RadioButton
+                                android:id="@+id/free_radio"
+                                android:text="空闲"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </RadioGroup>
+                    </TableRow>
+                    <Button
+                        android:id="@+id/addDB_btn"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/add_btn_select"
+                        android:text="添加"/>
+                </TableLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+
+
+</LinearLayout>

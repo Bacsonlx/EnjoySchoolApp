@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#F8F8E7"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/news_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/news_image" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="外交部：性质不一样"
+                android:maxLines="1"
+                android:maxWidth="200dp"
+                android:textColor="@color/bg_black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/news_content"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:text="12月10日，外交部发言人华春莹主持例行记者会。有记者就加公民康明凯、迈克尔案即将满两年一事提问：如果孟晚舟女士可以回国，这两名加公民是否也可以回加拿大？
+华春莹表示，你很关心这两起个案。"
+                android:textColor="#373232"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

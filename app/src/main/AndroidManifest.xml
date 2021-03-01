@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hznu.linxin.banner">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="享校"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar" >
+        <activity android:name="hznu.linxin.banner.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="hznu.linxin.banner.MainActivity"/>
+        <activity android:name="hznu.linxin.banner.RegisterActivity"/>
+        <activity android:name="hznu.linxin.banner.WebpageActivity"/>
+        <activity android:name="enjoyuse.Printers_Activity"/>
+        <activity android:name="enjoyuse.Washers_Activity"/>
+        <activity android:name="enjoyuse.SecondHandBooks_Activity"/>
+        <activity android:name="enjoyuse.Kitchen_Activity"/>
+    </application>
+
+</manifest>
