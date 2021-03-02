@@ -8,18 +8,21 @@
 
 ( 录了一个演示视频，可以简单看一看，以下是一些UI的截图)
 
-![image-20210302184933493](C:\Users\11609\AppData\Roaming\Typora\typora-user-images\image-20210302184933493.png)
+![image](https://user-images.githubusercontent.com/49552090/109638691-44351e80-7b89-11eb-9fbd-393d8f67f569.png)
+
 	**图1登录界面**
 
-![image-20210302184949505](C:\Users\11609\AppData\Roaming\Typora\typora-user-images\image-20210302184949505.png)
+![image](https://user-images.githubusercontent.com/49552090/109638726-50b97700-7b89-11eb-87a5-55bfe4ffb8dd.png)
 **图2享用界面**
 
-![image-20210302185006009](C:\Users\11609\AppData\Roaming\Typora\typora-user-images\image-20210302185006009.png)
+![image](https://user-images.githubusercontent.com/49552090/109638751-5b740c00-7b89-11eb-8bae-e196c3a2243c.png)
+
 		**图3享玩界面**
 
-![image-20210302185018276](C:\Users\11609\AppData\Roaming\Typora\typora-user-images\image-20210302185018276.png)
+![image](https://user-images.githubusercontent.com/49552090/109638778-63cc4700-7b89-11eb-823f-702d0c56d408.png)
+
 		**图4享买界面**
 
- ![image-20210302182949992](C:\Users\11609\AppData\Roaming\Typora\typora-user-images\image-20210302182949992.png)
+ ![image](https://user-images.githubusercontent.com/49552090/109638804-6a5abe80-7b89-11eb-898d-f6f632333ee0.png)
 
 ​	**图5个人中心界面**
